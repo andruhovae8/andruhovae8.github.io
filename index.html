@@ -14,12 +14,11 @@
   </script>
   <!-- Google Tag Manager -->
   <!-- End Google Tag Manager -->
-  <!-- 🌐 МЕТА та ПІДКЛЮЧЕННЯ -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Main Page</title>
 
-  <!-- 🎨 Стилі -->
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/navbar.css">
   <link rel="stylesheet" href="styles/form.css">
@@ -27,29 +26,25 @@
   <link rel="stylesheet" href="styles/substitution.css">
   <link rel="icon" type="image/png" href="images/index_logo/logo.png">
 
-  <!-- ⚙️ Скрипти -->
   <script src="script.js" defer></script>
   <script src="script-style.js" defer></script>
 
-  <!-- 🆕 СКРИПТ ДЛЯ ЗБИРАННЯ GCLID -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const params = new URLSearchParams(window.location.search);
       const gclid = params.get('gclid');
       if (gclid) {
-        // Зберігаємо в локальне сховище браузера
         localStorage.setItem('gclid', gclid);
         console.log('GCLID збережено:', gclid);
       }
     });
   </script>
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
 </head>
 
 <body>
-  <!-- 🛑 Noscript Google Tag Manager -->
 
-  <!-- 🔝 НАВІГАЦІЯ -->
   <header class="header">
     <nav class="navbar">
       <div class="navbar-container">
@@ -63,23 +58,19 @@
     </nav>
   </header>
 
-  <!-- 📄 ГОЛОВНИЙ ВМІСТ -->
   <div class="page-container">
     <h1>Телефонія</h1>
     <p class="intro-text">
       Телефонія — це технологія, що дозволяє передавати голосову інформацію через відстань за допомогою телефонних мереж, включаючи VoIP (IP-телефонія).
     </p>
 
-    <!-- 📊 Аналітика + Форма -->
     <div class="form-analytics-wrapper">
 
-      <!-- 🔍 Аналітика -->
       <div class="analytics-text" id="analytics">
         <h2>Аналітика</h2>
         <p>Аналітика дозволяє відстежувати ключові метрики, приймати обґрунтовані бізнес-рішення та підвищувати ефективність процесів.</p>
       </div>
 
-      <!-- 📝 Форма -->
       <div class="form" id="form">
         <div class="form-header">
           <p>Заповніть форму</p>
@@ -87,13 +78,13 @@
         <form>
           <label for="name">Ваше ім'я:</label>
           <input type="text" id="name" name="name" placeholder="Введіть ім'я" required />
-      
+
           <label for="phone">Номер телефону:</label>
           <input type="tel" id="phone" name="phone" placeholder="+380..." required />
-      
+
           <label for="order">Опис замовлення:</label>
           <textarea id="order" name="order" placeholder="Що саме вас цікавить?" rows="4" required></textarea>
-      
+
           <label for="product">Оберіть послугу:</label>
           <select id="product" name="product" required>
             <option value="">-- Оберіть варіант --</option>
@@ -101,17 +92,15 @@
             <option value="telephony">Телефонія</option>
             <option value="callback">Коллбек</option>
           </select>
-      
-          <!-- ✅ Додана кнопка -->
+
           <button type="submit" class="fancy-button">Надіслати</button>
         </form>
       </div>
     </div>
   </div>
 
-  <!-- 🔚 ФУТЕР -->
   <footer class="footer" id="contact">
-    <p>Зв’яжіться з нами: <a href="tel:+380449999999">+380449999999</a></p>
+    <p>Зв’яжіться з нами: <a href="tel:+380449999999">044 999 99 99</a></p>
   </footer>
 </body>
 </html>
