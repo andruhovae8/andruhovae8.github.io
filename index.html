@@ -6,21 +6,33 @@
     p=d.getElementsByTagName(s)[0],e=d.createElement(s),
     e.async=1,e.src=u,p.parentNode.insertBefore(e,p);
   })(document,'script','https://script.ringostat.com/v4/47/473891e9285309445a9a1ab853e08f5d9313bf15.js');
+
   var pw=function(){
     if(typeof(ringostatAnalytics)==='undefined'){setTimeout(pw,100);}
     else{ringostatAnalytics.sendHit('pageview');}
   };
+
   pw();
   </script>
+
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-KHRMKN4Z');</script>
+  <script>
+  (function(w,d,s,l,i){
+    w[l]=w[l]||[];
+    w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),
+    dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true;
+    j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+    f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KHRMKN4Z');
+  </script>
   <!-- End Google Tag Manager -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Main Page</title>
 
   <link rel="stylesheet" href="styles/base.css">
@@ -37,6 +49,7 @@
     document.addEventListener('DOMContentLoaded', () => {
       const params = new URLSearchParams(window.location.search);
       const gclid = params.get('gclid');
+
       if (gclid) {
         localStorage.setItem('gclid', gclid);
         console.log('GCLID збережено:', gclid);
@@ -44,30 +57,55 @@
     });
   </script>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
 </head>
 
 <body>
+
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHRMKN4Z"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript>
+    <iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-KHRMKN4Z"
+      height="0"
+      width="0"
+      style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
   <!-- End Google Tag Manager (noscript) -->
+
   <header class="header">
     <nav class="navbar">
       <div class="navbar-container">
+
         <div class="burger" id="burger">&#9776;</div>
-        <a href="index.html" class="logo">Main Company Page</a>
+
+        <a href="index.html" class="logo">
+          Main Company Page
+        </a>
+
         <ul class="nav-links" id="navLinks">
-          <li><a href="substitution.html">Підміна</a></li>
+          <li>
+            <a href="substitution.html">Підміна</a>
+          </li>
         </ul>
-        <a href="tel:+380449999999" class="phone-icon" id="phoneIcon">&#9743;</a>
+
+        <a
+          href="tel:+380449999999"
+          class="phone-icon ringostat-phone-odesa"
+          id="phoneIcon">
+          &#9743;
+        </a>
 
       </div>
     </nav>
   </header>
 
   <div class="page-container">
+
     <h1>Телефонія</h1>
+
     <p class="intro-text">
       Телефонія — це технологія, що дозволяє передавати голосову інформацію через відстань за допомогою телефонних мереж, включаючи VoIP (IP-телефонія).
     </p>
@@ -76,39 +114,108 @@
 
       <div class="analytics-text" id="analytics">
         <h2>Аналітика</h2>
-        <p>Аналітика дозволяє відстежувати ключові метрики, приймати обґрунтовані бізнес-рішення та підвищувати ефективність процесів.</p>
+
+        <p>
+          Аналітика дозволяє відстежувати ключові метрики, приймати обґрунтовані бізнес-рішення та підвищувати ефективність процесів.
+        </p>
       </div>
 
       <div class="form" id="form">
+
         <div class="form-header">
           <p>Заповніть форму</p>
         </div>
+
         <form>
+
           <label for="name">Ваше ім'я:</label>
-          <input type="text" id="name" name="name" placeholder="Введіть ім'я" required />
+
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Введіть ім'я"
+            required />
 
           <label for="phone">Номер телефону:</label>
-          <input type="tel" id="phone" name="phone" placeholder="+380..." required />
+
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+380..."
+            required />
 
           <label for="order">Опис замовлення:</label>
-          <textarea id="order" name="order" placeholder="Що саме вас цікавить?" rows="4" required></textarea>
+
+          <textarea
+            id="order"
+            name="order"
+            placeholder="Що саме вас цікавить?"
+            rows="4"
+            required></textarea>
 
           <label for="product">Оберіть послугу:</label>
-          <select id="product" name="product" required>
-            <option value="">-- Оберіть варіант --</option>
-            <option value="analytics">Аналітика</option>
-            <option value="telephony">Телефонія</option>
-            <option value="callback">Коллбек</option>
+
+          <select
+            id="product"
+            name="product"
+            required>
+
+            <option value="">
+              -- Оберіть варіант --
+            </option>
+
+            <option value="analytics">
+              Аналітика
+            </option>
+
+            <option value="telephony">
+              Телефонія
+            </option>
+
+            <option value="callback">
+              Коллбек
+            </option>
+
           </select>
 
-          <button type="submit" class="fancy-button">Надіслати</button>
+          <button
+            type="submit"
+            class="fancy-button">
+            Надіслати
+          </button>
+
         </form>
+
       </div>
+
     </div>
+
   </div>
 
   <footer class="footer" id="contact">
-    <p>Зв’яжіться з нами: <a href="tel:+380449999999">044 999 99 99</a> | <a href="tel:+380489999999">048 999 99 99</a></p>
+
+    <p>
+      Зв’яжіться з нами:
+
+      <a
+        href="tel:+380449999999"
+        class="ringostat-phone-odesa">
+        044 999 99 99
+      </a>
+
+      |
+
+      <a
+        href="tel:+380489999999"
+        class="ringostat-phone-kyiv">
+        048 999 99 99
+      </a>
+    </p>
+
   </footer>
+
 </body>
 </html>
+
